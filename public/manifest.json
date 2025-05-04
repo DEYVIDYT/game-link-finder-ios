@@ -1,0 +1,17 @@
+
+{
+  "name": "GameLink Finder",
+  "short_name": "GameLink",
+  "description": "Find and download your favorite games",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}

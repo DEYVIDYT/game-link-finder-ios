@@ -3,7 +3,7 @@ import React from "react";
 import { DownloadLink, extractDomain } from "@/services/gameApi";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { download } from "lucide-react"; 
+import { Download } from "lucide-react"; 
 import { toast } from "@/hooks/use-toast";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
@@ -67,7 +67,7 @@ const GameResults: React.FC<GameResultsProps> = ({ results }) => {
                       "flex items-center gap-2 transition-all"
                     )}
                   >
-                    <download className="h-4 w-4" />
+                    <Download className="h-4 w-4" />
                     Download via {domain}
                   </Button>
                 );
