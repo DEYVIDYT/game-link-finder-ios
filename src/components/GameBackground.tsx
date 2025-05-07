@@ -38,11 +38,11 @@ const CubeField = () => {
   return (
     <group ref={group}>
       {cubes.map((cube, i) => (
-        <mesh key={i} position={cube.position as any} rotation={cube.rotation as any} scale={cube.scale}>
+        <mesh key={i} position={cube.position as [number, number, number]} rotation={cube.rotation as [number, number, number]} scale={cube.scale}>
           <boxGeometry args={[1, 1, 1]} />
           <meshStandardMaterial 
-            color={new THREE.Color().setHSL(i * 0.05 % 1, 0.7, 0.5)} 
-            transparent 
+            color={new THREE.Color().setHSL(i * 0.05 % 1, 0.7, 0.5)}
+            transparent={true}
             opacity={0.6}
             emissive={new THREE.Color().setHSL(i * 0.05 % 1, 0.7, 0.5)}
             emissiveIntensity={0.3}
